@@ -1,0 +1,145 @@
+{
+  "users": [
+    {
+      "id": "admin_vishal",
+      "data": {
+        "role": "admin",
+        "email": "vanjaravishal10@gmail.com",
+        "last_login": {
+          "_seconds": 1752764959,
+          "_nanoseconds": 788000000
+        }
+      }
+    },
+    {
+      "id": "citizen_abc",
+      "data": {
+        "role": "citizen",
+        "subscribed_zones": [
+          "zoneA",
+          "zoneC"
+        ],
+        "notifications_enabled": true
+      }
+    }
+  ],
+  "alerts": [],
+  "agent_logs": [
+    {
+      "id": "emergencyAgent",
+      "data": {}
+    },
+    {
+      "id": "pollutionAgent",
+      "data": {}
+    },
+    {
+      "id": "trafficAgent",
+      "data": {}
+    },
+    {
+      "id": "weatherAgent",
+      "data": {}
+    }
+  ],
+  "city_data": [
+    {
+      "id": "pollution",
+      "data": {}
+    },
+    {
+      "id": "traffic",
+      "data": {}
+    },
+    {
+      "id": "weather",
+      "data": {}
+    }
+  ],
+  "city_graph": [
+    {
+      "id": "entity_pipe_A",
+      "data": {
+        "type": "pipe",
+        "connected_to": [
+          "waterTank_1",
+          "valve_4"
+        ],
+        "feeds": [
+          "zoneC"
+        ]
+      }
+    },
+    {
+      "id": "entity_road_A",
+      "data": {
+        "type": "road",
+        "connected_to": [
+          "intersection_X",
+          "intersection_Y"
+        ],
+        "feeds": [
+          "zoneA"
+        ]
+      }
+    },
+    {
+      "id": "entity_road_B",
+      "data": {
+        "type": "road",
+        "connected_to": [
+          "intersection_X"
+        ],
+        "feeds": [
+          "zoneB"
+        ]
+      }
+    },
+    {
+      "id": "intersection_X",
+      "data": {
+        "type": "intersection",
+        "connected_to": [
+          "entity_road_A",
+          "entity_road_B"
+        ]
+      }
+    }
+  ],
+  "settings": [
+    {
+      "id": "thresholds",
+      "data": {
+        "traffic_density_limit": 75,
+        "pollution_aqi_limit": 100,
+        "rainfall_flood_risk_mm": 30
+      }
+    },
+    {
+      "id": "zones",
+      "data": {
+        "zoneA": {
+          "name": "Andheri West",
+          "coordinates": {
+            "lat": 19.1197,
+            "lng": 72.8468
+          }
+        },
+        "zoneB": {
+          "name": "Bandra East",
+          "coordinates": {
+            "lat": 19.056,
+            "lng": 72.8407
+          }
+        },
+        "zoneC": {
+          "name": "Ghatkopar",
+          "coordinates": {
+            "lat": 19.0847,
+            "lng": 72.908
+          }
+        }
+      }
+    }
+  ]
+}

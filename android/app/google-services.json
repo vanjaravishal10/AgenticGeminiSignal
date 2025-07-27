@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1056458793645",
+    "project_id": "geminisignaltest-57b01",
+    "storage_bucket": "geminisignaltest-57b01.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056458793645:android:41e4a84f58ec5ce7291c24",
+        "android_client_info": {
+          "package_name": "com.example.geminisignal_admin_dashboard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4nt77mOJifAVfFDMDDMDFAYFzcz_QHPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

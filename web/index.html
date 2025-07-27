@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="google-signin-client_id"
+      content="1056458793645-cao6tcmdsuphuhides7jprj2orspfph4.apps.googleusercontent.com" />
+    <title>GeminiSignal</title>
+
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAVKOcjQ1QtTHR6weHfXeRPjILt3quJ7tY",
+        authDomain: "geminisignaltest-57b01.firebaseapp.com",
+        projectId: "geminisignaltest-57b01",
+        storageBucket: "geminisignaltest-57b01.appspot.com",
+        messagingSenderId: "1056458793645",
+        appId: "1:1056458793645:web:72d38ff284770b3f291c24"
+      };
+
+      // Initialize Firebase before app load
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Flutter initialization -->
+    <link rel="manifest" href="manifest.json" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="description" content="GeminiSignal Dashboard" />
+
+    <script src="flutter.js" defer></script>
+  </head>
+  <body>
+    <script src="main.dart.js" type="application/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+name: geminisignal_admin_dashboard
+description:  GeminiSignal web/mobile app for Agentic AI Hackathon
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.17.4
+  google_sign_in: ^6.2.1
+  #firebase_messaging: ^14.7.10
+  cloud_firestore: 4.17.5
+  firebase_auth_web: ^5.5.0
+  firebase_core_web: ^2.17.5
+  intl: ^0.17.0
+  leak_tracker: ^10.0.9
+  leak_tracker_flutter_testing: ^3.0.9
+  collection: ^1.18.0
+  charts_flutter: ^0.12.0
+  csv: ^5.0.1
+  pdf: ^3.10.1
+  printing: ^5.11.0
+  path_provider: ^2.1.2
+  # UI and core packages
+  cupertino_icons: ^1.0.6
+  provider: ^6.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/geminisignal_logo.png
+    - assets/icon_air_quality.png
+    - assets/icon_flood.png
+    - assets/icon_traffic.png
+    - assets/icon_water.png
+    - assets/icon_fire.png
+    - assets/icon_general.png
+    - assets/google_logo.png

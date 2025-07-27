@@ -1,0 +1,33 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // ✅ TEMPORARY: Allow everything (for emulator/dev use only)
+    match /{document=**} {
+      allow read, write: if true;
+    }
+
+    /*
+    // Uncomment below to re-enable auth-based access rules post-hackathon
+
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    match /alerts/{alertId} {
+      allow read: if isAdmin() || isZoneAllowed();
+      allow write: if isAdmin();
+    }
+
+    function isAdmin() {
+      return get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    function isZoneAllowed() {
+      let userData = get(/databases/$(database)/documents/users/$(request.auth.uid)).data;
+      return userData.role == 'citizen' &&
+        userData.zoneIds.hasAny([resource.data.zoneId]);
+    }
+    */
+  }
+}
